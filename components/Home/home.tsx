@@ -1,17 +1,12 @@
-import React from 'react'
-import { useTheme } from 'next-themes'
-import { Button } from '../ui/button';
-import ThemeToggler from '../Helper/ThemeToggler';
-import Nav from './Navbar/Nav';
+import Hero from "./Hero/Hero"
 
 const home = () => {
 
-  return (
-    <div className='overflow-hidden'>
-       {/* <ThemeToggler></ThemeToggler> */}
-        <Nav></Nav>
-    </div>
-  )
+    return (
+        <div className='overflow-hidden'>
+           <Hero ></Hero>
+        </div>
+    )
 }
 
 export default home

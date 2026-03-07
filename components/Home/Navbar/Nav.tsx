@@ -1,13 +1,30 @@
-import React from 'react'
+"use client"
+import React, { useEffect, useState } from 'react'
 import Logo from '@/components/Helper/Logo'
 import { NavLinks } from '@/constants'
 import Link from 'next/link'
 import { Download, MenuIcon } from 'lucide-react'
 import ThemeToggler from '@/components/Helper/ThemeToggler'
 
-const Nav = () => {
+type Props = {
+    openNav : () => void ;
+} ;
+
+const Nav = ({openNav}:Props) => {
+    const [navBg, setNavBg] = useState(false);
+
+    useEffect(() => {
+        const handler = () => {
+            if (window.scrollY >= 90) setNavBg(true);
+            if (window.scrollY < 90) setNavBg(false);
+        };
+
+        window.addEventListener("scroll", handler);
+
+        return () => window.removeEventListener("scroll", handler);
+    }, []);
     return (
-        <div className='fixed top-0 left-0 w-full h-[12vh] z-50 transition-all duration-200'>
+        <div className={` ${(navBg) ? "dark:bg-gray-800 bg-white shadow-md " : "fixed"} fixed top-0 left-0 w-full h-[12vh] z-50 transition-all duration-200`}>
 
             <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
 
@@ -36,8 +53,8 @@ const Nav = () => {
                             <span>Download CV</span>
                         </span>
                     </a>
-                    <ThemeToggler/>
-                    <MenuIcon className='h-8 w-8 cursor-pointer text-black dark:text-white lg:hidden ' />
+                    <ThemeToggler />
+                    <MenuIcon onClick={openNav} className='h-8 w-8 cursor-pointer text-black dark:text-white lg:hidden ' />
                 </div>
 
             </div>

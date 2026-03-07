@@ -24,6 +24,7 @@ export default function RootLayout({
       <body
         className={`${font.className}antialiased`}
       >
+        
         <Provider>{children}</Provider>
         
       </body>

@@ -20,11 +20,11 @@ const ThemeToggler = () => {
   return (
     <div className="overflow-hidden">
       <Button
-        className="cursor-pointer text-black hover:bg-gray-400 bg-gray-200 rounded-md h-10 w-10 flex items-center justify-center"
+        className="cursor-pointer text-black hover:bg-gray-400 dark:bg-gray-500 bg-gray-200 rounded-md h-10 w-10 flex items-center justify-center"
         onClick={() =>
           setTheme(currentTheme === "light" ? "dark" : "light")
         }
-      >
+      > 
         {currentTheme === "light" ? (
           <Moon className="h-5 w-5" />
         ) : (
