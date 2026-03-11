@@ -29,6 +29,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "components/Home/CodingProfiles"  ],
   "exclude": ["node_modules"]
 }

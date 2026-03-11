@@ -21,17 +21,17 @@ import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
 export const stats = [
   { label: "Projects Built", value: "15+" },
   { label: "DSA Problems Solved", value: "150+" },
-  { label: "Technologies Learned", value: "8+" },
-  { label: "Currently Learning", value: "Full Stack" },
+  { label: "Technologies Learned", value: "12+" },
+  { label: "Current Focus", value: "Full Stack" },
 ];
 
 /* ---------------- HIGHLIGHTS ---------------- */
 
 export const highlights = [
   { icon: MapPin, text: "Based in India" },
-  { icon: Briefcase, text: "Open for internships" },
-  { icon: GraduationCap, text: "IIIT Vadodara BTech CSE " },
-  { icon: Coffee, text: "Passionate about coding & problem solving" },
+  { icon: Briefcase, text: "Open for Software Engineering Internships" },
+  { icon: GraduationCap, text: "BTech CSE • IIIT Vadodara (Diu Campus)" },
+  { icon: Coffee, text: "Passionate about building scalable web apps" },
 ];
 
 /* ---------------- TESTIMONIALS (OPTIONAL) ---------------- */
@@ -43,15 +43,15 @@ export const userReviewData = [
     profession: "Student Developer",
     userImage: "/images/u1.jpg",
     review:
-      "Great problem-solving skills and always eager to learn new technologies.",
+      "Strong fundamentals in JavaScript and React with a great problem-solving mindset.",
   },
   {
     id: 2,
     name: "Project Collaborator",
-    profession: "Frontend Developer",
+    profession: "Full Stack Developer",
     userImage: "/images/u2.jpg",
     review:
-      "Very dedicated developer with strong fundamentals in JavaScript and React.",
+      "Very dedicated developer who focuses on clean code and building real-world projects.",
   },
 ];
 
@@ -64,7 +64,7 @@ export const contactInfo = [
     company: "IIIT Vadodara - ICD Diu Campus",
     period: "2024 - 2028",
     description:
-      "Focused on Data Structures, Algorithms, Operating Systems, DBMS, and Computer Networks.",
+      "Currently pursuing Computer Science with focus on core CS subjects like Data Structures & Algorithms, Operating Systems, DBMS and Computer Networks.",
     technologies: [
       "DSA",
       "DBMS",
@@ -79,13 +79,14 @@ export const contactInfo = [
     company: "Self Learning",
     period: "2024 - Present",
     description:
-      "Learning modern full stack development with React, Next.js and Node.js.",
+      "Building full stack applications using MERN stack and Next.js with focus on scalable backend APIs and modern frontend development.",
     technologies: [
       "React",
       "Next.js",
       "Node.js",
+      "Express.js",
       "MongoDB",
-      "Express",
+      "MySQL",
     ],
   },
 ];
@@ -105,7 +106,7 @@ export const footerSocialLinks = [
   },
   {
     icon: FaTwitter,
-    href: "https://twitter.com",
+    href: "https://twitter.com/YOUR_HANDLE",
     label: "Twitter",
   },
   {
@@ -119,38 +120,38 @@ export const footerSocialLinks = [
 
 export const projects = [
   {
-    title: "Portfolio Website",
+    title: "Developer Portfolio",
     description:
-      "Personal developer portfolio showcasing projects, skills and experience.",
+      "Personal portfolio website showcasing projects, technical skills and development journey.",
     image: "/images/p1.jpg",
-    techStack: ["Next.js", "Tailwind CSS", "React"],
+    techStack: ["Next.js", "React", "Tailwind CSS"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
-    title: "Todo App",
+    title: "MERN Blog Platform",
     description:
-      "Task management application with CRUD functionality and local storage.",
+      "Full stack blog application where users can create, edit and manage posts with authentication.",
     image: "/images/p2.jpg",
+    techStack: ["MongoDB", "Express", "React", "Node.js"],
+    demoUrl: "#",
+    githubUrl: "#",
+  },
+  {
+    title: "Task Management App",
+    description:
+      "Productivity application for managing daily tasks with CRUD operations and responsive UI.",
+    image: "/images/p3.jpg",
     techStack: ["React", "JavaScript", "CSS"],
     demoUrl: "#",
     githubUrl: "#",
   },
   {
-    title: "Weather App",
+    title: "Weather Forecast App",
     description:
-      "Weather forecasting application using public APIs with responsive UI.",
-    image: "/images/p3.jpg",
-    techStack: ["JavaScript", "API", "HTML", "CSS"],
-    demoUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "Full Stack Blog App",
-    description:
-      "Blog platform where users can create, edit and delete posts.",
+      "Weather application that fetches real-time data from public APIs and displays dynamic weather information.",
     image: "/images/p4.jpg",
-    techStack: ["Node.js", "Express", "MongoDB", "React"],
+    techStack: ["JavaScript", "API", "HTML", "CSS"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -176,7 +177,8 @@ export const skillCategories = [
       { name: "Node.js", icon: Server },
       { name: "Express.js", icon: Server },
       { name: "MongoDB", icon: Database },
-      { name: "REST API", icon: Globe },
+      { name: "MySQL", icon: Database },
+      { name: "REST APIs", icon: Globe },
     ],
   },
   {
@@ -185,7 +187,103 @@ export const skillCategories = [
       { name: "Git", icon: GitBranch },
       { name: "GitHub", icon: GitBranch },
       { name: "Linux", icon: Terminal },
-      { name: "DSA", icon: Code2 },
+      { name: "Data Structures", icon: Code2 },
+      { name: "Problem Solving", icon: Code2 },
     ],
   },
+];
+
+// {experiences}
+
+export const experiences = [
+  {
+    type: "education",
+    title: "BTech in Computer Science",
+    company: "IIIT Vadodara – ICD Diu Campus",
+    period: "2024 – 2028",
+    description:
+      "Currently pursuing Computer Science with focus on Data Structures & Algorithms, Operating Systems, DBMS and Computer Networks.",
+    technologies: [
+      "DSA",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
+      "OOP"
+    ],
+  },
+
+  {
+    type: "learning",
+    title: "Full Stack Web Development",
+    company: "Self Learning",
+    period: "2024 – Present",
+    description:
+      "Learning and building modern web applications using MERN stack and Next.js with focus on scalable backend APIs and responsive frontend interfaces.",
+    technologies: [
+      "React",
+      "Next.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "MySQL"
+    ],
+  },
+
+  {
+    type: "work",
+    title: "Full Stack Projects Development",
+    company: "Personal Projects",
+    period: "2025 – Present",
+    description:
+      "Developed multiple web applications using MERN stack and Next.js including full stack CRUD applications and responsive frontend projects.",
+    technologies: [
+      "MERN Stack",
+      "Next.js",
+      "Tailwind CSS",
+      "REST APIs",
+      "Git",
+      "GitHub"
+    ],
+  },
+];
+
+// {extra data for coding profiles}
+import { SiLeetcode, SiCodeforces, SiGeeksforgeeks, SiGithub } from "react-icons/si";
+
+export const codingProfiles = [
+  {
+    name: "LeetCode",
+    username: "vikas-gurjar",
+    description: "Solved 150+ Data Structures & Algorithms problems.",
+    icon: SiLeetcode,
+    link: "https://leetcode.com/",
+  },
+  {
+    name: "Codeforces",
+    username: "vikas_gurjar",
+    description: "Practicing competitive programming and improving problem solving.",
+    icon: SiCodeforces,
+    link: "https://codeforces.com/",
+  },
+  {
+    name: "GeeksforGeeks",
+    username: "vikas-gurjar",
+    description: "Practicing DSA concepts and coding interview problems.",
+    icon: SiGeeksforgeeks,
+    link: "https://geeksforgeeks.org/",
+  },
+  {
+    name: "GitHub",
+    username: "VikasGurjar",
+    description: "Open source projects, full stack applications and experiments.",
+    icon: SiGithub,
+    link: "https://github.com/",
+  },
+];
+
+export const githubStats = [
+  { label: "Repositories", value: "20+" },
+  { label: "Commits", value: "500+" },
+  { label: "Projects", value: "15+" },
+  { label: "Technologies", value: "12+" },
 ];
