@@ -24,7 +24,7 @@ const Nav = ({openNav}:Props) => {
         return () => window.removeEventListener("scroll", handler);
     }, []);
     return (
-        <div className={` ${(navBg) ? "dark:bg-gray-800 bg-white shadow-md " : "fixed"} fixed top-0 left-0 w-full h-[12vh] z-50 transition-all duration-200`}>
+        <div className={` ${(navBg) ? " dark:bg-gray-800/60 backdrop-blur-md border-b border-white/10 bg-gray/100  shadow-md  " : "fixed"} fixed top-0 left-0 w-full h-[12vh] z-50 transition-all duration-200`}>
 
             <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
 

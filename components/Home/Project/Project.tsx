@@ -5,7 +5,7 @@ import SectionHeading from '@/components/Helper/SectionHeading';
 
 const Project = () => {
     return (
-        <div className="py-16 bg-gray-100 dark:bg-gray-900">
+        <div className="py-16 bg-gray-100 dark:bg-black">
             <SectionHeading
                 title_1="Featured"
                 title_2="Projects"

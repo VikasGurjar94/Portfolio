@@ -12,9 +12,14 @@ import {
   Palette,
   Server,
   Terminal,
+  Github,
+  Linkedin,
+  PhoneCallIcon,
+  Phone,
 } from "lucide-react";
 
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { FaCediSign, FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa6";
+import { LiaLinkedin } from "react-icons/lia";
 
 /* ---------------- STATS ---------------- */
 
@@ -57,7 +62,7 @@ export const userReviewData = [
 
 /* ---------------- EDUCATION / EXPERIENCE ---------------- */
 
-export const contactInfo = [
+export const contactInfo2 = [
   {
     type: "education",
     title: "BTech in Computer Science",
@@ -91,6 +96,7 @@ export const contactInfo = [
   },
 ];
 
+
 /* ---------------- SOCIAL LINKS ---------------- */
 
 export const footerSocialLinks = [
@@ -116,6 +122,27 @@ export const footerSocialLinks = [
   },
 ];
 
+export const contactInfo = [
+  {
+    label: "Email",
+    value: "vikasgurjar@email.com",
+    href: "mailto:vikasgurjar@email.com",
+    icon: Mail,
+  },
+  {
+    label: "Location",
+    value: "India",
+    href: "#",
+    icon: MapPin,
+  },
+  {
+    label: "Phone",
+    value: "+91 9638953766",
+    href: "#",
+    icon: Phone,
+  },
+ 
+];
 /* ---------------- PROJECTS ---------------- */
 
 export const projects = [
