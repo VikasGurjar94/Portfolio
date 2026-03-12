@@ -41,61 +41,7 @@ export const highlights = [
 
 /* ---------------- TESTIMONIALS (OPTIONAL) ---------------- */
 
-export const userReviewData = [
-  {
-    id: 1,
-    name: "Peer Developer",
-    profession: "Student Developer",
-    userImage: "/images/u1.jpg",
-    review:
-      "Strong fundamentals in JavaScript and React with a great problem-solving mindset.",
-  },
-  {
-    id: 2,
-    name: "Project Collaborator",
-    profession: "Full Stack Developer",
-    userImage: "/images/u2.jpg",
-    review:
-      "Very dedicated developer who focuses on clean code and building real-world projects.",
-  },
-];
-
 /* ---------------- EDUCATION / EXPERIENCE ---------------- */
-
-export const contactInfo2 = [
-  {
-    type: "education",
-    title: "BTech in Computer Science",
-    company: "IIIT Vadodara - ICD Diu Campus",
-    period: "2024 - 2028",
-    description:
-      "Currently pursuing Computer Science with focus on core CS subjects like Data Structures & Algorithms, Operating Systems, DBMS and Computer Networks.",
-    technologies: [
-      "DSA",
-      "DBMS",
-      "OOP",
-      "Operating Systems",
-      "Computer Networks",
-    ],
-  },
-  {
-    type: "learning",
-    title: "Full Stack Web Development",
-    company: "Self Learning",
-    period: "2024 - Present",
-    description:
-      "Building full stack applications using MERN stack and Next.js with focus on scalable backend APIs and modern frontend development.",
-    technologies: [
-      "React",
-      "Next.js",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "MySQL",
-    ],
-  },
-];
-
 
 /* ---------------- SOCIAL LINKS ---------------- */
 

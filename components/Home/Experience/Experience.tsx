@@ -5,7 +5,7 @@ import { experiences } from "@/data";
 
 const Experience = () => {
   return (
-    <div className="py-16 bg-gray-100 dark:bg-gray-950 overflow-hidden">
+    <section className="py-16 bg-gray-100 dark:bg-slate-950 overflow-hidden">
       {/* 1. Animate the Heading */}
       <div data-aos="fade-down">
         <SectionHeading
@@ -91,7 +91,7 @@ const Experience = () => {
           );
         })}
       </div>
-    </div>
+    </section>
   );
 };
 

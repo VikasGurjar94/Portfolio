@@ -1,66 +1,127 @@
-"use client"
-import React, { useEffect, useState } from 'react'
-import Logo from '@/components/Helper/Logo'
-import { NavLinks } from '@/constants'
-import Link from 'next/link'
-import { Download, MenuIcon } from 'lucide-react'
-import ThemeToggler from '@/components/Helper/ThemeToggler'
+"use client";
+
+import React, { useEffect, useState } from "react";
+import Logo from "@/components/Helper/Logo";
+import { NavLinks } from "@/constants";
+import Link from "next/link";
+import { Download, MenuIcon } from "lucide-react";
+import ThemeToggler from "@/components/Helper/ThemeToggler";
 
 type Props = {
-    openNav : () => void ;
-} ;
+  openNav: () => void;
+};
 
-const Nav = ({openNav}:Props) => {
-    const [navBg, setNavBg] = useState(false);
+const Nav = ({ openNav }: Props) => {
+  const [navBg, setNavBg] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
-    useEffect(() => {
-        const handler = () => {
-            if (window.scrollY >= 90) setNavBg(true);
-            if (window.scrollY < 90) setNavBg(false);
-        };
+  /* NAV BACKGROUND ON SCROLL */
+  useEffect(() => {
+    const handler = () => {
+      if (window.scrollY >= 90) setNavBg(true);
+      else setNavBg(false);
+    };
 
-        window.addEventListener("scroll", handler);
+    window.addEventListener("scroll", handler);
+    return () => window.removeEventListener("scroll", handler);
+  }, []);
 
-        return () => window.removeEventListener("scroll", handler);
-    }, []);
-    return (
-        <div className={` ${(navBg) ? " dark:bg-gray-800/60 backdrop-blur-md border-b border-white/10 bg-gray/100  shadow-md  " : "fixed"} fixed top-0 left-0 w-full h-[12vh] z-50 transition-all duration-200`}>
+  /* DETECT ACTIVE SECTION */
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
 
-            <div className='flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto'>
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setActiveSection(entry.target.id);
+          }
+        });
+      },
+      {
+        threshold: 0.6,
+      }
+    );
 
-                <Logo />
+    sections.forEach((section) => observer.observe(section));
 
-                <div className='hidden lg:flex items-center space-x-20'>
-                    {NavLinks.map((item) => {
-                        return (
-                            <Link
-                                key={item.name}
-                                href={item.href}
-                                className='text-black dark:text-white hover:text-yellow-500 dark:hover:text-yellow-200 font-semibold   transition-all duration-200'
-                            >
-                                {item.name}
-                            </Link>
-                        )
-                    })}
-                </div>
-                <div className="flex items-center space-x-4">
-                    <a
-                        href="#_"
-                        className="box-border relative z-20 inline-flex items-center justify-center w-auto px-6 sm:px-8 py-3 overflow-hidden font-bold text-white transition-all duration-300 bg-indigo-600 rounded-md cursor-pointer group ring-offset-2 ring-1 ring-indigo-300 ring-offset-indigo-200 hover:ring-offset-indigo-500 ease focus:outline-none"
-                    >
-                        <span className="relative z-20 flex items-center space-x-2 text-sm">
-                            <Download className="w-4 h-4" />
-                            <span>Download CV</span>
-                        </span>
-                    </a>
-                    <ThemeToggler />
-                    <MenuIcon onClick={openNav} className='h-8 w-8 cursor-pointer text-black dark:text-white lg:hidden ' />
-                </div>
+    return () => observer.disconnect();
+  }, []);
 
-            </div>
+  /* SMOOTH SCROLL */
+  const handleScroll = (id: string) => {
+    const section = document.getElementById(id);
 
+    if (section) {
+      section.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
+  return (
+    <div
+      className={`fixed top-0 left-0 w-full h-[12vh] z-50 transition-all duration-300
+      ${
+        navBg
+          ? "bg-white/70 dark:bg-gray-900/70 backdrop-blur-md border-b border-gray-200 dark:border-gray-800 shadow-sm"
+          : "bg-transparent"
+      }`}
+    >
+      <div className="flex items-center h-full justify-between w-[90%] xl:w-[80%] mx-auto">
+
+        <Logo />
+
+        {/* NAV LINKS */}
+        <div className="hidden lg:flex items-center space-x-6">
+
+          {NavLinks.map((item) => {
+            const sectionId = item.href.replace("#", "");
+            const isActive = activeSection === sectionId;
+
+            return (
+              <button
+                key={item.name}
+                onClick={() => handleScroll(sectionId)}
+                className={`px-4 py-2 rounded-full font-semibold transition-all duration-300
+                ${
+                  isActive
+                    ? "bg-indigo-600 text-white shadow-md"
+                    : "text-black dark:text-white hover:text-indigo-500"
+                }`}
+              >
+                {item.name}
+              </button>
+            );
+          })}
         </div>
-    )
-}
 
-export default Nav
+        {/* RIGHT SIDE */}
+        <div className="flex items-center space-x-4">
+
+          {/* DOWNLOAD CV */}
+          <a
+            href="#"
+            className="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 font-bold text-white bg-indigo-600 rounded-md transition-all duration-300 hover:bg-indigo-700"
+          >
+            <span className="flex items-center space-x-2 text-sm">
+              <Download className="w-4 h-4" />
+              <span>Download CV</span>
+            </span>
+          </a>
+
+          <ThemeToggler />
+
+          {/* MOBILE MENU */}
+          <MenuIcon
+            onClick={openNav}
+            className="h-8 w-8 cursor-pointer text-black dark:text-white lg:hidden"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Nav;

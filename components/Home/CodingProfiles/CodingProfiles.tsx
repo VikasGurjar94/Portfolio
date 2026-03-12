@@ -4,7 +4,7 @@ import { codingProfiles, githubStats } from "@/data";
 
 const CodingProfiles = () => {
   return (
-    <section className="py-20 bg-white dark:bg-black overflow-hidden">
+    <section className="py-20 bg-white dark:bg-slate-950 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* 1. Animate Section Heading */}
         <div data-aos="fade-down">

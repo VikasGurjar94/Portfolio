@@ -4,7 +4,7 @@ import React from "react";
 
 const About = function () {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-black transition-colors duration-300 overflow-hidden">
+    <section id="about" className="py-20 bg-gray-100 dark:bg-slate-950 transition-colors duration-300 overflow-hidden">
       <div className="container mx-auto px-6">
         {/* 1. Animate the Heading */}
         <div data-aos="fade-down">

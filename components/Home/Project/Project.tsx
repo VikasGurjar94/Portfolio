@@ -5,7 +5,7 @@ import SectionHeading from '@/components/Helper/SectionHeading';
 
 const Project = () => {
     return (
-        <div className="py-16 bg-gray-100 dark:bg-black overflow-hidden">
+        <section id='projects' className="py-16 bg-gray-100 dark:bg-slate-950 overflow-hidden">
             {/* 1. Animate the Heading */}
             <div data-aos="fade-down">
                 <SectionHeading
@@ -31,7 +31,7 @@ const Project = () => {
                     );
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 

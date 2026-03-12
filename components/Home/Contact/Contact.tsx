@@ -8,7 +8,7 @@ import React from "react";
 
 const Contact = () => {
   return (
-    <section className="py-20 bg-gray-100 dark:bg-gray-950 overflow-hidden">
+    <section id="contact" className="py-20 bg-gray-100 dark:bg-slate-950 overflow-hidden">
       <div className="w-[90%] lg:w-[80%] mx-auto">
         
         {/* 1. Animate Section Heading */}

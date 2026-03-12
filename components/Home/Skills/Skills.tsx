@@ -5,7 +5,7 @@ import SkillCard from './SkillCard';
 
 const Skills = () => {
     return (
-        <div className="py-16 bg-gray-100 dark:bg-gray-950 overflow-hidden">
+        <section id='skills' className="py-16 bg-gray-100 dark:bg-slate-950 overflow-hidden">
             {/* 1. Animate the Heading */}
             <div data-aos="fade-down">
                 <SectionHeading
@@ -43,7 +43,7 @@ const Skills = () => {
                     );
                 })}
             </div>
-        </div>
+        </section>
     )
 }
 

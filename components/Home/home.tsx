@@ -27,16 +27,15 @@ const home = () => {
 }, []);
 
     return (
-        <div className='overflow-hidden'>
-           <Hero ></Hero>
+        <section  className='overflow-hidden'>
+           <Hero />
            <About/>
            <Skills/>
            <Project/>
            <Experience/>
-           {/* <ClientReview/> */}
            <CodingProfiles/>
            <Contact/>
-        </div>
+        </section>
     )
 }
 

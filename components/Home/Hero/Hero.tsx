@@ -5,7 +5,7 @@ import { TypeAnimation } from 'react-type-animation'
 
 const Hero = () => {
     return (
-        <div className="relative  min-h-screen bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100%)] flex items-center justify-center overflow-hidden dark:bg-[radial-gradient(circle_farthest-corner_at_50.3%_47.3%,rgba(0,0,0,0)_0.1%,rgba(0,0,0,0)_90%)]">
+        <section id='hero' className="relative  min-h-screen bg-[radial-gradient(circle_476px_at_54.8%_51.5%,rgba(168,229,253,1)_0%,rgba(244,244,254,1)_42.3%,rgba(244,244,254,1)_100%)] flex items-center justify-center overflow-hidden dark:bg-[radial-gradient(circle_farthest-corner_at_50.3%_47.3%,rgba(0,0,0,0)_0.1%,rgba(0,0,0,0)_90%)]">
             <div className="relative z-10 text-center">
                 <div data-aos='fade' className="relative mt-20 mb-5 py-5 flex justify-center items-center overflow-hidden rounded-full ">
                     <img
@@ -67,7 +67,7 @@ const Hero = () => {
                 </div>
             
             </div>
-        </div>
+        </section>
     )
 }
 
