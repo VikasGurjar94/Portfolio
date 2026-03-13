@@ -12,9 +12,12 @@ const Hero = () => {
                         src="/personal4.png"
                         alt="Profile"
                         className="w-40 h-40 object-cover rounded-full 
-               grayscale hover:grayscale-0 hover:ring-4 hover:ring-yellow-400/50 hover:shadow-2xl
-               scale-100 hover:scale-110 border-2 border-transparent hover:border-yellow-400 
-               transition-all duration-500 ease-in-out cursor-pointer"
+           grayscale-0 scale-100 border-2 border-yellow-400
+           md:grayscale md:border-transparent 
+           md:hover:grayscale-0 md:hover:ring-4 md:hover:ring-yellow-400/50 
+           md:hover:shadow-2xl md:hover:scale-110 md:hover:border-yellow-400 
+           
+           transition-all duration-500 ease-in-out cursor-pointer"
                     />
                 </div>
                 <div data-aos='fade-up' className="sm:mb-2">
