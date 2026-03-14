@@ -48,22 +48,22 @@ export const highlights = [
 export const footerSocialLinks = [
   {
     icon: FaGithub,
-    href: "https://github.com/YOUR_GITHUB",
+    href: "https://github.com/VikasGurjar94",
     label: "GitHub",
   },
   {
     icon: FaLinkedin,
-    href: "https://linkedin.com/in/YOUR_LINKEDIN",
+    href: "https://www.linkedin.com/in/vikas-gurjar-g9427/",
     label: "LinkedIn",
   },
   {
     icon: FaTwitter,
-    href: "https://twitter.com/YOUR_HANDLE",
-    label: "Twitter",
+    href: "https://x.com/VikasGurja46809",
+    label: "X",
   },
   {
     icon: Mail,
-    href: "mailto:YOUR_EMAIL",
+    href: "mailto:vikasgurjar9638@gmail.com",
     label: "Email",
   },
 ];
@@ -71,20 +71,20 @@ export const footerSocialLinks = [
 export const contactInfo = [
   {
     label: "Email",
-    value: "vikasgurjar@email.com",
-    href: "mailto:vikasgurjar@email.com",
+    value: "vikasgurjar9638@gmail.com",
+    href: "mailto:vikasgurjar9638@gmail.com",
     icon: Mail,
   },
   {
     label: "Location",
     value: "India",
-    href: "#",
+    href: "",
     icon: MapPin,
   },
   {
     label: "Phone",
     value: "+91 9638953766",
-    href: "#",
+    href: "",
     icon: Phone,
   },
  
@@ -229,34 +229,34 @@ export const codingProfiles = [
     username: "vikas-gurjar",
     description: "Solved 150+ Data Structures & Algorithms problems.",
     icon: SiLeetcode,
-    link: "https://leetcode.com/",
+    link: "https://leetcode.com/u/Vikas_Gurjar94/",
   },
   {
     name: "Codeforces",
     username: "vikas_gurjar",
     description: "Practicing competitive programming and improving problem solving.",
     icon: SiCodeforces,
-    link: "https://codeforces.com/",
+    link: "https://codeforces.com/profile/Vikas_Gurjar94",
   },
   {
     name: "GeeksforGeeks",
     username: "vikas-gurjar",
     description: "Practicing DSA concepts and coding interview problems.",
     icon: SiGeeksforgeeks,
-    link: "https://geeksforgeeks.org/",
+    link: "https://www.geeksforgeeks.org/profile/user_28sqyay7uok?tab=activity",
   },
   {
     name: "GitHub",
     username: "VikasGurjar",
     description: "Open source projects, full stack applications and experiments.",
     icon: SiGithub,
-    link: "https://github.com/",
+    link: "https://github.com/VikasGurjar94",
   },
 ];
 
 export const githubStats = [
   { label: "Repositories", value: "20+" },
-  { label: "Commits", value: "500+" },
+  { label: "Commits", value: "150+" },
   { label: "Projects", value: "15+" },
   { label: "Technologies", value: "12+" },
 ];
