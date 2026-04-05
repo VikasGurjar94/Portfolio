@@ -102,7 +102,8 @@ const Nav = ({ openNav }: Props) => {
 
           {/* DOWNLOAD CV */}
           <a
-            href="#"
+            href="/resume.pdf"
+            download="Vikas_Gurjar_Resume.pdf"
             className="relative inline-flex items-center justify-center px-6 sm:px-8 py-3 font-bold text-white bg-indigo-600 rounded-md transition-all duration-300 hover:bg-indigo-700"
           >
             <span className="flex items-center space-x-2 text-sm">

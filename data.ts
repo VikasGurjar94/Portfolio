@@ -96,37 +96,41 @@ export const projects = [
     title: "Developer Portfolio",
     description:
       "Personal portfolio website showcasing projects, technical skills and development journey.",
-    image: "/images/p1.jpg",
+    image: "",
+    gradient: "from-indigo-500 via-purple-500 to-pink-500",
     techStack: ["Next.js", "React", "Tailwind CSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/VikasGurjar94",
   },
   {
     title: "MERN Blog Platform",
     description:
       "Full stack blog application where users can create, edit and manage posts with authentication.",
-    image: "/images/p2.jpg",
+    image: "",
+    gradient: "from-emerald-500 via-teal-500 to-cyan-500",
     techStack: ["MongoDB", "Express", "React", "Node.js"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/VikasGurjar94",
   },
   {
     title: "Task Management App",
     description:
       "Productivity application for managing daily tasks with CRUD operations and responsive UI.",
-    image: "/images/p3.jpg",
+    image: "",
+    gradient: "from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["React", "JavaScript", "CSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/VikasGurjar94",
   },
   {
     title: "Weather Forecast App",
     description:
       "Weather application that fetches real-time data from public APIs and displays dynamic weather information.",
-    image: "/images/p4.jpg",
+    image: "",
+    gradient: "from-sky-500 via-blue-500 to-violet-500",
     techStack: ["JavaScript", "API", "HTML", "CSS"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/VikasGurjar94",
   },
 ];
 

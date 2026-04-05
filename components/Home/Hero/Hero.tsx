@@ -2,6 +2,12 @@
 import { Button } from '@/components/ui/button'
 import { Download, FolderOpen } from 'lucide-react'
 import { TypeAnimation } from 'react-type-animation'
+import { FaGithub, FaLinkedin } from 'react-icons/fa6'
+
+const scrollToSection = (id: string) => {
+    const el = document.getElementById(id);
+    if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+};
 
 const Hero = () => {
     return (
@@ -22,13 +28,10 @@ const Hero = () => {
                 </div>
                 <div data-aos='fade-up' className="sm:mb-2">
                     <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white dark:bg-gray-600 text-sm text-muted-foreground dark:text-gray-200 mb-8">
-
                         {/* green dot */}
                         <span className="w-2 h-2 rounded-full bg-green-500"></span>
-
                         {/* text */}
                         <span>Available for opportunities</span>
-
                     </span>
                 </div>
                 {/* {title} */}
@@ -55,18 +58,44 @@ const Hero = () => {
                 </p>
                 {/* buttons */}
                 <div data-aos='fade-up' data-aos-delay='350' className="flex flex-col sm:flex-row gap-4 justify-center">
-                    <Button size={"lg"} asChild className="w-fit mx-auto sm:mx-0">
-                        <a href="#_">
-                            <FolderOpen className="w-5 h-5 mr-2" />
-                            View Projects
-                        </a>
+                    <Button
+                        size={"lg"}
+                        className="w-fit mx-auto sm:mx-0"
+                        onClick={() => scrollToSection('projects')}
+                    >
+                        <FolderOpen className="w-5 h-5 mr-2" />
+                        View Projects
                     </Button>
-                    <Button size={"lg"} asChild className="w-fit mx-auto sm:mx-0">
-                        <a href="#_">
+                    <Button size={"lg"} asChild className="w-fit mx-auto sm:mx-0" variant={"outline"}>
+                        <a href="/resume.pdf" download="Vikas_Gurjar_Resume.pdf">
                             <Download className="w-5 h-5 mr-2" />
                             Download CV
                         </a>
                     </Button>
+                </div>
+
+                {/* Social Links */}
+                <div data-aos='fade-up' data-aos-delay='450' className="flex items-center justify-center gap-4 mt-8">
+                    <a
+                        href="https://www.linkedin.com/in/vikas-gurjar-g9427/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="LinkedIn Profile"
+                        className="group flex items-center gap-2 px-5 py-2.5 rounded-full bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-700 hover:border-blue-500 hover:shadow-blue-200 dark:hover:shadow-blue-900 hover:-translate-y-1 transition-all duration-300"
+                    >
+                        <FaLinkedin className="w-5 h-5 text-[#0A66C2] group-hover:scale-110 transition-transform duration-300" />
+                        <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">LinkedIn</span>
+                    </a>
+                    <a
+                        href="https://github.com/VikasGurjar94"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="GitHub Profile"
+                        className="group flex items-center gap-2 px-5 py-2.5 rounded-full bg-white dark:bg-gray-800 shadow-md border border-gray-200 dark:border-gray-700 hover:border-gray-900 dark:hover:border-white hover:shadow-gray-200 dark:hover:shadow-gray-700 hover:-translate-y-1 transition-all duration-300"
+                    >
+                        <FaGithub className="w-5 h-5 text-gray-800 dark:text-white group-hover:scale-110 transition-transform duration-300" />
+                        <span className="text-sm font-semibold text-gray-700 dark:text-gray-200">GitHub</span>
+                    </a>
                 </div>
             
             </div>

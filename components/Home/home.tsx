@@ -29,9 +29,9 @@ const home = () => {
     return (
         <section  className='overflow-hidden'>
            <Hero />
+           <Project/>
            <About/>
            <Skills/>
-           <Project/>
            <Experience/>
            <CodingProfiles/>
            <Contact/>
