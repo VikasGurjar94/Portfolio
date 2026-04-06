@@ -93,45 +93,36 @@ export const contactInfo = [
 
 export const projects = [
   {
-    title: "Developer Portfolio",
+    title: "AI Exam Notes Generator",
     description:
-      "Personal portfolio website showcasing projects, technical skills and development journey.",
-    image: "",
+      "AI-powered web app for generating high-quality notes, documentation, and diagrams with Google auth, Razorpay credits, and instant PDF downloads.",
+    image: "/aiNotes.png",
     gradient: "from-indigo-500 via-purple-500 to-pink-500",
-    techStack: ["Next.js", "React", "Tailwind CSS"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/VikasGurjar94",
+    techStack: ["React.js", "Node.js" , "Razorpay" , "Gemini API"],
+    demoUrl: "https://ainotesgenerator-frontend.onrender.com",
+    githubUrl: "https://github.com/VikasGurjar94/AINotesGenerator",
   },
   {
-    title: "MERN Blog Platform",
+    title: "NextStep Careers",
     description:
-      "Full stack blog application where users can create, edit and manage posts with authentication.",
-    image: "",
+      "Modern full-stack job portal connecting recruiters and candidates, built with React, Supabase.",
+    image: "/nextStepCareers.png",
     gradient: "from-emerald-500 via-teal-500 to-cyan-500",
-    techStack: ["MongoDB", "Express", "React", "Node.js"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/VikasGurjar94",
+    techStack: ["Supabase", "Clerk auth", "React", "Shadcn UI"],
+    demoUrl: "https://next-step-careers.netlify.app",
+    githubUrl: "https://github.com/VikasGurjar94/NextStep-Careers",
   },
   {
-    title: "Task Management App",
+    title: "Portfolio Website",
     description:
-      "Productivity application for managing daily tasks with CRUD operations and responsive UI.",
-    image: "",
+      "Portfolio website for showcasing my projects and skills.",
+    image: "/portfolio.png",
     gradient: "from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["React", "JavaScript", "CSS"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/VikasGurjar94",
+    demoUrl: "https://vikasgurjar.vercel.app",
+    githubUrl: "https://github.com/VikasGurjar94/Portfolio",
   },
-  {
-    title: "Weather Forecast App",
-    description:
-      "Weather application that fetches real-time data from public APIs and displays dynamic weather information.",
-    image: "",
-    gradient: "from-sky-500 via-blue-500 to-violet-500",
-    techStack: ["JavaScript", "API", "HTML", "CSS"],
-    demoUrl: "#",
-    githubUrl: "https://github.com/VikasGurjar94",
-  },
+
 ];
 
 /* ---------------- SKILLS ---------------- */

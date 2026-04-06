@@ -2,6 +2,10 @@ import React from 'react'
 import ProjectCard from './ProjectCard';
 import { projects } from '@/data';
 import SectionHeading from '@/components/Helper/SectionHeading';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+
 
 const Project = () => {
     return (
@@ -16,7 +20,7 @@ const Project = () => {
             </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 w-[80%] mx-auto">
-                {projects.map((project, index) => {
+                {projects.slice(0, 3).map((project, index) => {
                     return (
                         <div 
                             key={index}
@@ -30,6 +34,15 @@ const Project = () => {
                         </div>
                     );
                 })}
+            </div>
+
+            <div className="mt-12 text-center" data-aos="fade-up">
+                <Link href="/projects">
+                    <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 text-white">
+                        View All Projects
+                        <ArrowRight className="ml-2 w-4 h-4" />
+                    </Button>
+                </Link>
             </div>
         </section>
     )
