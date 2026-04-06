@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Personal Portfolio Website
 
-## Getting Started
+Welcome to my personal portfolio website! This repository houses the source code for my portfolio, built to showcase my projects, skills, education, and coding profiles. 
 
-First, run the development server:
+## 🌐 Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Check out the live website: [Vikas Gurjar Portfolio](https://vikasgurjar.vercel.app)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Built With
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+This site is built with modern web technologies:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+* **Framework:** [Next.js](https://nextjs.org/) (Version 16)
+* **UI Library:** [React](https://reactjs.org/) (Version 19)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+* **UI Components:** [Radix UI](https://www.radix-ui.com/) & [shadcn/ui](https://ui.shadcn.com/)
+* **Animations:** [AOS (Animate On Scroll)](https://michalsnik.github.io/aos/) & Custom CSS Animations
+* **Icons:** [Lucide React](https://lucide.dev/) & [React Icons](https://react-icons.github.io/react-icons/)
+* **Contact Form:** [Nodemailer](https://nodemailer.com/about/) for handling email services.
 
-## Learn More
+## 🧑‍💻 Features
 
-To learn more about Next.js, take a look at the following resources:
+* **Home & Hero Section:** Introduction with social links, responsive layout, and key highlights.
+* **Projects Showcase:** Detailed cards for top full-stack projects including:
+  * *AI Exam Notes Generator*
+  * *NextStep Careers*
+* **Skills Dashboard:** Categorized tech stack displaying proficiency in Frontend, Backend, and Development Tools.
+* **Education & Experience:** Timeline highlighting my academic journey at IIIT Vadodara (Diu Campus) and self-learning milestones.
+* **Coding Profiles:** Integrations and direct links for competitive programming platforms like LeetCode, Codeforces, GeeksforGeeks, and GitHub.
+* **Contact Integration:** A fully functional contact form for easy communication.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## ⚙️ Running Locally
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Follow these steps to run the portfolio on your local machine:
 
-## Deploy on Vercel
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/VikasGurjar94/Portfolio.git
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+2. **Navigate to the project directory:**
+   ```bash
+   cd Portfolio
+   ```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+3. **Install the dependencies:**
+   ```bash
+   npm install
+   ```
+
+4. **Environment Variables:**
+   Create a `.env` or `.env.local` file in the root directory and add the necessary environment variables (e.g., for Nodemailer):
+   ```env
+   # Example variables for the contact form email service
+   EMAIL_USER=your_email@gmail.com
+   EMAIL_PASS=your_app_password
+   ```
+
+5. **Start the development server:**
+   ```bash
+   npm run dev
+   ```
+
+6. **Open your browser:**
+   Navigate to [http://localhost:3000](http://localhost:3000) to see the application in action.
+
+## 📫 Contact
+
+Feel free to reach out to me!
+- **Email:** [vikasgurjar9638@gmail.com](mailto:vikasgurjar9638@gmail.com)
+- **LinkedIn:** [Vikas Gurjar](https://www.linkedin.com/in/vikas-gurjar-g9427/)
+- **X (Twitter):** [@VikasGurja46809](https://x.com/VikasGurja46809)
+- **GitHub:** [VikasGurjar94](https://github.com/VikasGurjar94)
+
+## 📄 License
+
+This project is open-source. Feel free to use it as inspiration!
