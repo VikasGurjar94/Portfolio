@@ -113,16 +113,61 @@ export const projects = [
     githubUrl: "https://github.com/VikasGurjar94/NextStep-Careers",
   },
   {
-    title: "Portfolio Website",
+    title: "Voyage AI",
     description:
-      "Portfolio website for showcasing my projects and skills.",
+      "A full-stack travel planning web app combining tour booking with AI-powered itinerary generation, booking management, and expense tracking.",
+    image: "/voyageAI.png",
+    gradient: "from-blue-500 via-cyan-500 to-teal-400",
+    techStack: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+    demoUrl: "https://voyage-ai-mern.vercel.app",
+    githubUrl: "https://github.com/VikasGurjar94/VoyageAI-mern",
+  },
+
+  {
+    title: "Space Site",
+    description: "A static responsive landing page built with React and Vite for learning responsive design.",
+    image: "/spaceSite.png",
+    gradient: "from-purple-500 via-indigo-500 to-blue-500",
+    techStack: ["React", "Vite", "CSS", "Responsive Design"],
+    demoUrl: "https://vikas-space.netlify.app",
+    githubUrl: "https://github.com/VikasGurjar94/Space-site",
+  },
+  {
+    title: "Cache Coherence Simulator",
+    description: "Interactive simulator for cache coherence protocols (MESI), featuring step-by-step visualizations and cache state tracking.",
+    image: "/cs.png",
+    gradient: "from-blue-600 via-cyan-500 to-teal-400",
+    techStack: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    demoUrl: "https://cache-coherence-simulator-pi.vercel.app",
+    githubUrl: "https://github.com/VikasGurjar94/cache-explorer-40",
+  },
+  {
+    title: "K72 Agency Clone",
+    description: "A visually engaging, animated agency website clone demonstrating advanced GSAP animations and creative scroll interactions.",
+    image: "/k7.png",
+    gradient: "from-gray-700 via-gray-900 to-black",
+    techStack: ["HTML5", "CSS3", "JavaScript", "GSAP"],
+    demoUrl: "https://k72agency-clone.netlify.app",
+    githubUrl: "https://github.com/VikasGurjar94/K72-clone",
+  },
+  {
+    title: "Portfolio V1",
+    description: "My personal developer portfolio website to showcase my skills, projects, and professional journey.",
     image: "/portfolio.png",
     gradient: "from-orange-500 via-amber-500 to-yellow-400",
     techStack: ["React", "JavaScript", "CSS"],
     demoUrl: "https://vikasgurjar.vercel.app",
     githubUrl: "https://github.com/VikasGurjar94/Portfolio",
   },
-
+  {
+    title: "Cynthia Ugwu Clone",
+    description: "A highly interactive, award-winning portfolio clone featuring custom cursor effects, smooth scrolling, and GSAP animations.",
+    image: "/cyn.png",
+    gradient: "from-zinc-600 via-neutral-700 to-stone-800",
+    techStack: ["HTML5", "CSS3", "JavaScript", "GSAP", "Locomotive Scroll"],
+    demoUrl: "https://vikasgurjar94.github.io/CynthiaUgwuClone",
+    githubUrl: "https://github.com/VikasGurjar94/CynthiaUgwuClone",
+  },
 ];
 
 /* ---------------- SKILLS ---------------- */
@@ -251,7 +296,7 @@ export const codingProfiles = [
 
 export const githubStats = [
   { label: "Repositories", value: "20+" },
-  { label: "Commits", value: "150+" },
+  { label: "Commits", value: "200+" },
   { label: "Projects", value: "15+" },
-  { label: "Technologies", value: "12+" },
+  { label: "Technologies", value: "20+" },
 ];

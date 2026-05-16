@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import Logo from "@/components/Helper/Logo";
 import { NavLinks } from "@/constants";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Download, MenuIcon } from "lucide-react";
 import ThemeToggler from "@/components/Helper/ThemeToggler";
 
@@ -14,6 +15,8 @@ type Props = {
 const Nav = ({ openNav }: Props) => {
   const [navBg, setNavBg] = useState(false);
   const [activeSection, setActiveSection] = useState("home");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   /* NAV BACKGROUND ON SCROLL */
   useEffect(() => {
@@ -78,9 +81,9 @@ const Nav = ({ openNav }: Props) => {
 
           {NavLinks.map((item) => {
             const sectionId = item.href.replace("#", "");
-            const isActive = activeSection === sectionId;
+            const isActive = isHome && activeSection === sectionId;
 
-            return (
+            return isHome ? (
               <button
                 key={item.name}
                 onClick={() => handleScroll(sectionId)}
@@ -93,6 +96,14 @@ const Nav = ({ openNav }: Props) => {
               >
                 {item.name}
               </button>
+            ) : (
+              <Link
+                key={item.name}
+                href={`/${item.href}`}
+                className="px-4 py-2 rounded-full font-semibold transition-all duration-300 text-black dark:text-white hover:text-indigo-500"
+              >
+                {item.name}
+              </Link>
             );
           })}
         </div>

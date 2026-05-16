@@ -1,5 +1,8 @@
+"use client";
 import { NavLinks } from "@/constants";
 import { X } from "lucide-react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
 
 type Props = {
   showNav: boolean;
@@ -7,6 +10,8 @@ type Props = {
 };
 
 const MobileNav = ({ closeNav, showNav }: Props) => {
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   const sidebarOpenClose = showNav
     ? "translate-x-0"
@@ -53,7 +58,7 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
           {NavLinks.map((link, index) => {
             const sectionId = link.href.replace("#", "");
 
-            return (
+            return isHome ? (
               <button
                 key={index}
                 onClick={() => handleScroll(sectionId)}
@@ -61,6 +66,15 @@ const MobileNav = ({ closeNav, showNav }: Props) => {
               >
                 {link.name}
               </button>
+            ) : (
+              <Link
+                key={index}
+                href={`/${link.href}`}
+                onClick={closeNav}
+                className="text-white w-fit text-[20px] ml-12 border-b-[1.5px] pb-1 border-white sm:text-[30px]"
+              >
+                {link.name}
+              </Link>
             );
           })}
 

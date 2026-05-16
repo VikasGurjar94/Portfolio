@@ -16,7 +16,7 @@ type Props = {
 
 const ProjectCard = ({ title, description, image, gradient, techStack, demoUrl, githubUrl }: Props) => {
     return (
-        <div className="group relative bg-white dark:bg-gray-800 shadow-md rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl h-full flex flex-col">
+        <div className="group relative bg-white dark:bg-gray-800 shadow-md rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-xl h-full flex flex-col border border-gray-200 dark:border-gray-700 hover:border-indigo-300 dark:hover:border-indigo-500/60">
             {/* Image / Gradient Banner */}
             <div className="relative h-48 overflow-hidden shrink-0">
                 {image ? (
