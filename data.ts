@@ -122,7 +122,15 @@ export const projects = [
     demoUrl: "https://voyage-ai-mern.vercel.app",
     githubUrl: "https://github.com/VikasGurjar94/VoyageAI-mern",
   },
-
+ {
+  title: "CodeFast Cpp",
+  description: "Mobile-first C++ syntax reduction editor that transforms simple human-friendly commands into complete C++ code blocks, helping users focus on logic instead of syntax.",
+  image: "/codeFast.jpeg",
+  gradient: "from-gray-900 via-gray-700 to-blue-500",
+  techStack: ["React", "Vite", "Monaco Editor", "Node.js", "Express", "Tailwind CSS"],
+  demoUrl: "https://code-fast-mobile.vercel.app",
+  githubUrl: "https://github.com/VikasGurjar94/CodeFastMobile",
+},
   {
     title: "Space Site",
     description: "A static responsive landing page built with React and Vite for learning responsive design.",
@@ -132,6 +140,7 @@ export const projects = [
     demoUrl: "https://vikas-space.netlify.app",
     githubUrl: "https://github.com/VikasGurjar94/Space-site",
   },
+ 
   {
     title: "Cache Coherence Simulator",
     description: "Interactive simulator for cache coherence protocols (MESI), featuring step-by-step visualizations and cache state tracking.",
